@@ -146,10 +146,6 @@ select:focus-visible {
   transition: transform 220ms ease;
 }
 
-.brand:hover .brand-logo {
-  transform: rotate(-6deg) scale(1.04);
-}
-
 .primary-nav {
   display: flex;
   align-items: center;

@@ -561,10 +561,10 @@ function App() {
         <p>THE WINTER EDIT <span aria-hidden="true">·</span> KHADDAR, VELVET &amp; SHAWLS</p>
       </div>
       <header className="site-header">
-        <a className="brand" href="#home" aria-label="RUMAIS home">
+        <div className="brand">
           <img className="brand-logo" src="/images/logo.jpg" alt="" />
           <span>RUMAIS</span>
-        </a>
+        </div>
         <nav className={`primary-nav${menuOpen ? " is-open" : ""}`} id="primary-navigation" aria-label="Main navigation">
           <a className="active" href="#collections" onClick={() => setMenuOpen(false)}>Shop</a>
           <a href="#new-arrivals" onClick={() => setMenuOpen(false)}>New Arrivals</a>
@@ -898,10 +898,10 @@ function App() {
       <footer>
         <div className="footer-main">
           <div className="footer-brand-block">
-            <a className="brand footer-brand" href="#home" aria-label="RUMAIS home">
+            <div className="brand footer-brand">
               <img className="brand-logo" src="/images/logo.jpg" alt="" />
               <span>RUMAIS</span>
-            </a>
+            </div>
             <p>Unstitched essentials in Khaddar, velvet and shawls.</p>
           </div>
           <nav className="footer-nav" aria-label="Footer navigation">
