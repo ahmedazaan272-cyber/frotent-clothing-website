@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUMAIS | Order Confirmed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar"><p>THE WINTER EDIT <span aria-hidden="true">·</span> KHADDAR, VELVET & SHAWLS</p></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="RUMAIS home"><img class="brand-logo" src="logo.jpg" alt=""><span>RUMAIS</span></a>
+  </header>
+  <main class="checkout-page">
+    <div class="checkout-container">
+      <section class="order-success-panel">
+        <p class="eyebrow">ORDER CONFIRMED</p>
+        <h1>Thank you for your order</h1>
+        <p>Your order number is <strong id="success-order-number">—</strong>.</p>
+        <p>We have received your order details and will contact you soon to confirm delivery.</p>
+        <a class="primary-link hero-primary-btn" href="index.html">Continue shopping</a>
+      </section>
+    </div>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const order = params.get("order");
+    if (order) document.getElementById("success-order-number").textContent = order;
+  </script>
+</body>
+</html>

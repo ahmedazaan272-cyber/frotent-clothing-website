@@ -1,0 +1,85 @@
+gmail.com<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUMAIS | Email Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>THE WINTER EDIT <span aria-hidden="true">·</span> KHADDAR, VELVET & SHAWLS</p>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="RUMAIS home"><img class="brand-logo" src="logo.jpg" alt=""><span>RUMAIS</span></a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-toggle" href="index.html#collections" aria-haspopup="true" aria-expanded="false">Shop <span class="nav-caret" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="index.html#collections" role="menuitem">All pieces</a>
+          <a href="index.html?category=Khaddar#collections" role="menuitem">Khaddar</a>
+          <a href="index.html?category=Velvet#collections" role="menuitem">Velvet</a>
+          <a href="index.html?category=Shawls#collections" role="menuitem">Shawls</a>
+        </div>
+      </div>
+      <a href="index.html#new-arrivals">New Arrivals</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-whatsapp" href="https://wa.me/923709315821" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+      <a class="nav-cart" href="index.html#cart" aria-label="Cart, 0 items">
+        <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>
+        <span class="cart-label">Cart</span><span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="email-order-page" id="email-order-page">
+      <nav class="product-breadcrumbs" aria-label="Breadcrumb">
+        <a class="product-back-link" href="index.html#collections"><span aria-hidden="true">←</span> Back to shop</a><span aria-hidden="true">/</span>
+        <span aria-current="page">Email order</span>
+      </nav>
+      <h1 class="email-order-title">Place Your Order by Email</h1>
+      <p class="email-order-intro">Review your selected piece, complete your delivery details, and send your order request to RUMAIS.</p>
+      <p id="email-order-empty" class="email-order-empty" hidden>No product is selected yet. <a href="index.html#collections">Browse the collection</a> and choose a piece first.</p>
+      <div class="email-order-layout" id="email-order-layout">
+        <aside class="email-order-product" id="email-order-product" aria-label="Selected product"></aside>
+        <form id="email-order-form" class="email-order-form" novalidate>
+          <div class="order-form-grid">
+            <div class="order-field"><label for="order-name">Full Name</label><input id="order-name" name="customer_name" type="text" required autocomplete="name"><span class="field-error" data-error-for="customer_name" hidden></span></div>
+            <div class="order-field"><label for="order-email">Email Address</label><input id="order-email" name="customer_email" type="email" required autocomplete="email"><span class="field-error" data-error-for="customer_email" hidden></span></div>
+            <div class="order-field"><label for="order-phone">Phone Number</label><input id="order-phone" name="customer_phone" type="tel" required autocomplete="tel" inputmode="tel"><span class="field-error" data-error-for="customer_phone" hidden></span></div>
+            <div class="order-field"><label for="order-city">City</label><input id="order-city" name="city" type="text" required autocomplete="address-level2"><span class="field-error" data-error-for="city" hidden></span></div>
+            <div class="order-field order-field-full"><label for="order-address">Complete Delivery Address</label><textarea id="order-address" name="delivery_address" required rows="3" autocomplete="street-address"></textarea><span class="field-error" data-error-for="delivery_address" hidden></span></div>
+            <div class="order-field"><label for="order-product">Product</label><input id="order-product" name="product_name" type="text" readonly></div>
+            <div class="order-field"><label for="order-size">Selected Size</label><select id="order-size" name="product_size" required><option value="">Select size</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select><span class="field-error" data-error-for="product_size" hidden></span></div>
+            <div class="order-field"><label for="order-quantity">Quantity</label><input id="order-quantity" name="quantity" type="number" min="1" step="1" required><span class="field-error" data-error-for="quantity" hidden></span></div>
+            <div class="order-field"><label for="order-total">Total Price</label><input id="order-total" name="total_price" type="text" readonly></div>
+          </div>
+          <div class="order-form-actions">
+            <a class="order-cancel-button" href="index.html#collections">Cancel</a>
+            <button type="submit" class="order-submit-button">Place Order</button>
+          </div>
+          <p class="order-form-message" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="index.html" aria-label="RUMAIS home"><img class="brand-logo" src="logo.jpg" alt=""><span>RUMAIS</span></a>
+        <p>Unstitched essentials in Khaddar, velvet and shawls.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#collections">Shop the collection</a>
+        <a href="index.html#new-arrivals">New arrivals</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom"><p>© 2026 RUMAIS</p><a href="index.html">Back to top ↑</a></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js?v=15"></script>
+</body>
+</html>

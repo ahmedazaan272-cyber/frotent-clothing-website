@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUMAIS | Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="RUMAIS home"><img class="brand-logo" src="logo.jpg" alt=""><span>RUMAIS</span></a>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-toggle" href="index.html#collections" aria-haspopup="true" aria-expanded="false">Shop <span class="nav-caret" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="index.html#collections" role="menuitem">All pieces</a>
+          <a href="index.html?category=Khaddar#collections" role="menuitem">Khaddar</a>
+          <a href="index.html?category=Velvet#collections" role="menuitem">Velvet</a>
+          <a href="index.html?category=Shawls#collections" role="menuitem">Shawls</a>
+        </div>
+      </div>
+      <a href="index.html#new-arrivals">New Arrivals</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-whatsapp" href="https://wa.me/923709315821" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+      <button class="search-toggle" type="button" aria-label="Open product search" aria-expanded="false" aria-controls="product-search-form">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 5 5" /></svg>
+      </button>
+      <a class="nav-cart" href="index.html#cart" aria-label="Cart, 0 items">
+        <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>
+        <span class="cart-label">Cart</span><span id="cart-count">0</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="search-area">
+      <form class="header-search-form" id="product-search-form" role="search" hidden>
+        <span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></span>
+        <label class="visually-hidden" for="product-search">Search products</label>
+        <input id="product-search" type="search" placeholder="Search products, fabrics, categories…" autocomplete="off" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false">
+        <button class="search-clear" type="button" aria-label="Clear search" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+        <button class="search-submit" type="submit">Search</button>
+      </form>
+      <ul class="search-suggestions" id="search-suggestions" role="listbox" aria-label="Product suggestions" hidden></ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="product-details-route" aria-live="polite">
+      <div id="product-details-content"></div>
+    </section>
+  </main>
+
+  <div id="product-data" hidden>
+    <div class="product-track">
+
+      <a class="product-card khaddar-card" id="khaddar-product" href="product.html?product=khaddar" data-category="Khaddar" data-price="4500" data-options='[{"label":"Set","choices":["2-Piece — Shirt + Dupatta","3-Piece — Shirt + Dupatta + Trouser"]},{"label":"Fabric length","choices":["Standard","Extra length"]}]'>
+        <span class="product-image"><img src="img1.jpg" alt="Beige embroidered outfit"><span class="product-card-badge">Khaddar</span></span>
+        <div class="product-card-body"><span class="product-card-category">Winter Edit 2026</span><h3>Winter Khaddar Suit</h3><div class="product-card-footer"><span class="product-card-price">Rs. 4,500</span><span class="product-card-cta">View Details ↗</span></div></div>
+      </a>
+      <a class="product-card velvet-card" id="velvet-product" href="product.html?product=velvet" data-category="Velvet" data-price="6000" data-options='[{"label":"Set","choices":["2-Piece — Shirt + Dupatta","3-Piece — Shirt + Dupatta + Trouser"]},{"label":"Fabric length","choices":["Standard","Extra length"]}]'>
+        <span class="product-image"><img src="img3.jpg" alt="Dark brown outfit with a patterned shawl"><span class="product-card-badge">Velvet</span></span>
+        <div class="product-card-body"><span class="product-card-category">Formal Velvet</span><h3>Classic Velvet Suit</h3><div class="product-card-footer"><span class="product-card-price">Rs. 6,000</span><span class="product-card-cta">View Details ↗</span></div></div>
+      </a>
+      <a class="product-card shawl-card" id="shawls-product" href="product.html?product=shawls" data-category="Shawls" data-price="3500" data-options='[{"label":"Shawl length","choices":["Standard — 2.5 m","Long — 2.75 m"]}]'>
+        <span class="product-image"><img src="img2.jpg" alt="Beige outfit with a patterned shawl"><span class="product-card-badge">Shawls</span></span>
+        <div class="product-card-body"><span class="product-card-category">Pure Woolen Blend</span><h3>Embroidered Shawl</h3><div class="product-card-footer"><span class="product-card-price">Rs. 3,500</span><span class="product-card-cta">View Details ↗</span></div></div>
+      </a>
+      <a class="product-card khaddar-card demo-product" id="khaddar-sample-product" href="product.html?product=khaddar-sample" data-category="Khaddar · Sample" data-price="5200" data-sample="true" data-options='[{"label":"Set","choices":["2-Piece — Shirt + Dupatta","3-Piece — Shirt + Dupatta + Trouser"]},{"label":"Fabric length","choices":["Standard","Extra length"]}]'>
+        <span class="product-image"><img src="img1.jpg" alt="Sample beige embroidered outfit"><span class="product-card-badge">Sample Piece</span></span>
+        <div class="product-card-body"><span class="product-card-category">Khaddar Edit</span><h3>Embroidered Khaddar Suit</h3><div class="product-card-footer"><span class="product-card-price">Rs. 5,200</span><span class="product-card-cta">View Details ↗</span></div></div>
+      </a>
+      <a class="product-card velvet-card demo-product" id="velvet-sample-product" href="product.html?product=velvet-sample" data-category="Velvet · Sample" data-price="6800" data-sample="true" data-options='[{"label":"Set","choices":["2-Piece — Shirt + Dupatta","3-Piece — Shirt + Dupatta + Trouser"]},{"label":"Fabric length","choices":["Standard","Extra length"]}]'>
+        <span class="product-image"><img src="img3.jpg" alt="Sample dark brown outfit with a patterned shawl"><span class="product-card-badge">Sample Piece</span></span>
+        <div class="product-card-body"><span class="product-card-category">Luxury Velvet</span><h3>Velvet Formal Set</h3><div class="product-card-footer"><span class="product-card-price">Rs. 6,800</span><span class="product-card-cta">View Details ↗</span></div></div>
+      </a>
+      <a class="product-card shawl-card demo-product" id="shawls-sample-product" href="product.html?product=shawls-sample" data-category="Shawls · Sample" data-price="2800" data-sample="true" data-options='[{"label":"Shawl length","choices":["Standard — 2.5 m","Long — 2.75 m"]}]'>
+        <span class="product-image"><img src="img2.jpg" alt="Sample beige outfit with a patterned shawl"><span class="product-card-badge">Sample Piece</span></span>
+        <div class="product-card-body"><span class="product-card-category">Winter Shawls</span><h3>Winter Embroidered Shawl</h3><div class="product-card-footer"><span class="product-card-price">Rs. 2,800</span><span class="product-card-cta">View Details ↗</span></div></div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="index.html" aria-label="RUMAIS home"><img class="brand-logo" src="logo.jpg" alt=""><span>RUMAIS</span></a>
+        <p>Unstitched essentials in Khaddar, velvet and shawls.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#collections">Shop the collection</a>
+        <a href="index.html#new-arrivals">New arrivals</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="social-links" aria-label="Social media">
+        <a href="https://www.instagram.com/itx_azaan_10/" target="_blank" rel="noopener noreferrer" aria-label="Visit RUMAIS on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".8" class="social-dot" /></svg><span>Instagram</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+        <a href="https://www.facebook.com/azaan.ahmad.186590" target="_blank" rel="noopener noreferrer" aria-label="Visit RUMAIS on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h1.7V1.4c-.8-.1-1.8-.2-3-.2-3 0-5 1.8-5 5.2V9H7v4h2.7v8H14Z" /></svg><span>Facebook</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 RUMAIS</p><a href="index.html">Back to shop ↑</a></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js?v=15"></script>
+</body>
+</html>
+
